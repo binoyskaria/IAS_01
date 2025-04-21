@@ -1,0 +1,35 @@
+{
+    "model_type": "PyTorch",
+    "inference_api": {
+      "name": "infer",
+      "run_command": "uvicorn main:app --host 0.0.0.0 --port 8000"
+    },
+    "api_schema": {
+      "input": {
+        "number_of_inputs": 1,
+        "details": [
+          {
+            "name": "input_image",
+            "type": "image",
+            "value": "/path/to/input.jpg",
+            "description": "Path to the input image file that will be processed by the OCR engine."
+          }
+        ]
+      },
+      "output": {
+        "number_of_outputs": 1,
+        "details": [
+          {
+            "name": "detected_text",
+            "type": "text",
+            "value": "OCR output text",
+            "description": "The textual content extracted from the input image."
+          }
+        ]
+      }
+    },
+    "dependencies": {
+      "requirements_file": "requirements.txt"
+    }
+  }
+  

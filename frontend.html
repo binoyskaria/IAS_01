@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Classifier</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2em;
+    }
+
+    h1 {
+      margin-bottom: 1em;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 2em;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    input[type="file"] {
+      margin-bottom: 1em;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 0.6em 1.2em;
+      font-size: 1em;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #preview {
+      margin-top: 1em;
+      max-width: 100%;
+      max-height: 300px;
+      display: none;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    #result {
+      margin-top: 1.5em;
+      font-weight: bold;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <h1>Image Classifier</h1>
+
+  <form id="uploadForm">
+    <input type="file" id="imageInput" name="image" accept="image/*" required>
+    <br>
+    <img id="preview" alt="Image Preview">
+    <br>
+    <button type="submit">Upload and Predict</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    const form = document.getElementById('uploadForm');
+    const imageInput = document.getElementById('imageInput');
+    const preview = document.getElementById('preview');
+    const resultDiv = document.getElementById('result');
+
+    imageInput.addEventListener('change', () => {
+      const file = imageInput.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = () => {
+          preview.src = reader.result;
+          preview.style.display = 'block';
+        };
+        reader.readAsDataURL(file);
+      } else {
+        preview.style.display = 'none';
+        preview.src = '';
+      }
+    });
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      if (imageInput.files.length === 0) {
+        resultDiv.innerText = 'Please select an image file.';
+        return;
+      }
+
+      const formData = new FormData();
+      formData.append('image', imageInput.files[0]);
+
+      try {
+        const response = await fetch('http://127.0.0.1:8081/infer', {
+          method: 'POST',
+          body: formData,
+        });
+
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+
+        const data = await response.json();
+        resultDiv.innerText = `Predicted Label: ${data.predicted_label}`;
+      } catch (error) {
+        console.error('Error:', error);
+        resultDiv.innerText = 'Error occurred while processing the image.';
+      }
+    });
+  </script>
+</body>
+</html>
