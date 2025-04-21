@@ -1,0 +1,5 @@
+{
+    "id": "mnist_model",
+    "type": "pytorch",
+    "version": 1
+}

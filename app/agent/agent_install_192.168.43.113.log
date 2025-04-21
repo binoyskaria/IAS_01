@@ -1,0 +1,708 @@
+2025-04-17 10:34:06 - Starting agent installation. Remote agent IP: 192.168.43.113, Username: rishi
+2025-04-17 10:34:06 - Checking if nfs-common is installed...
+2025-04-17 10:34:06 - nfs-common is already installed.
+2025-04-17 10:34:06 - Ensuring mount point /mnt/nfs exists...
+2025-04-17 10:34:06 - Mount point /mnt/nfs already exists.
+2025-04-17 10:34:06 - NFS share is already mounted on /mnt/nfs. Unmounting...
+2025-04-17 10:34:06 - Unmounted the NFS share.
+2025-04-17 10:34:06 - Mounting NFS share from 192.168.43.151:/nfs_share to /mnt/nfs...
+2025-04-17 10:34:06 - NFS share mounted successfully.
+2025-04-17 10:34:06 - Checking if Python3, python3-venv, and python3-pip are installed...
+2025-04-17 10:34:06 - Python3 is already installed.
+2025-04-17 10:34:06 - Virtual environment 'agent_venv' already exists. Skipping creation.
+2025-04-17 10:34:06 - Activating virtual environment...
+2025-04-17 10:34:06 - Upgrading pip...
+Requirement already satisfied: pip in ./agent_venv/lib/python3.10/site-packages (25.0.1)
+2025-04-17 10:34:07 - Installing Python dependency 'requests'...
+Requirement already satisfied: requests in ./agent_venv/lib/python3.10/site-packages (2.32.3)
+Requirement already satisfied: charset-normalizer<4,>=2 in ./agent_venv/lib/python3.10/site-packages (from requests) (3.4.1)
+Requirement already satisfied: idna<4,>=2.5 in ./agent_venv/lib/python3.10/site-packages (from requests) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./agent_venv/lib/python3.10/site-packages (from requests) (2.3.0)
+Requirement already satisfied: certifi>=2017.4.17 in ./agent_venv/lib/python3.10/site-packages (from requests) (2025.1.31)
+2025-04-17 10:34:07 - Starting agent...
+2025-04-17 10:34:07 - Agent installation and startup complete.
+[Thu Apr 17 10:34:08 2025] Starting agent heartbeat...
+[Thu Apr 17 10:34:08 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:34:08 2025] Using provided username: rishi
+[Thu Apr 17 10:34:08 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:34:08 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a6afa60>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:34:13 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:34:13 2025] Using provided username: rishi
+[Thu Apr 17 10:34:13 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:34:13 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a508370>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:34:18 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:34:18 2025] Using provided username: rishi
+[Thu Apr 17 10:34:18 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:34:18 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a508be0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:34:23 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:34:23 2025] Using provided username: rishi
+[Thu Apr 17 10:34:23 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:34:23 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a509450>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:34:28 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:34:28 2025] Using provided username: rishi
+[Thu Apr 17 10:34:28 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:34:28 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a6afd00>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:34:33 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:34:33 2025] Using provided username: rishi
+[Thu Apr 17 10:34:33 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:34:33 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a6afb20>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:34:38 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:34:38 2025] Using provided username: rishi
+[Thu Apr 17 10:34:38 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:34:38 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a508dc0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:34:43 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:34:43 2025] Using provided username: rishi
+[Thu Apr 17 10:34:43 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:34:43 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a508460>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:34:48 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:34:48 2025] Using provided username: rishi
+[Thu Apr 17 10:34:48 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:34:48 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a509cc0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:34:53 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:34:53 2025] Using provided username: rishi
+[Thu Apr 17 10:34:53 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:34:54 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a6afac0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:34:59 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:34:59 2025] Using provided username: rishi
+[Thu Apr 17 10:34:59 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:34:59 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a6aff70>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:35:04 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:35:04 2025] Using provided username: rishi
+[Thu Apr 17 10:35:04 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:35:04 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a508160>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:35:09 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:35:09 2025] Using provided username: rishi
+[Thu Apr 17 10:35:09 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:35:09 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a508ac0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:35:14 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:35:14 2025] Using provided username: rishi
+[Thu Apr 17 10:35:14 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:35:14 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a509060>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:35:19 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:35:19 2025] Using provided username: rishi
+[Thu Apr 17 10:35:19 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:35:19 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:35:24 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:35:24 2025] Using provided username: rishi
+[Thu Apr 17 10:35:24 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:35:24 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:35:29 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:35:29 2025] Using provided username: rishi
+[Thu Apr 17 10:35:29 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:35:29 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:35:34 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:35:34 2025] Using provided username: rishi
+[Thu Apr 17 10:35:34 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:35:34 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:35:39 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:35:39 2025] Using provided username: rishi
+[Thu Apr 17 10:35:39 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:35:40 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:35:45 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:35:45 2025] Using provided username: rishi
+[Thu Apr 17 10:35:45 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:35:45 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:35:50 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:35:50 2025] Using provided username: rishi
+[Thu Apr 17 10:35:50 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:35:50 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:35:55 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:35:55 2025] Using provided username: rishi
+[Thu Apr 17 10:35:55 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:35:55 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:36:00 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:36:00 2025] Using provided username: rishi
+[Thu Apr 17 10:36:00 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:36:00 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:36:05 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:36:05 2025] Using provided username: rishi
+[Thu Apr 17 10:36:05 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:36:05 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:36:10 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:36:10 2025] Using provided username: rishi
+[Thu Apr 17 10:36:10 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:36:10 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:36:15 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:36:15 2025] Using provided username: rishi
+[Thu Apr 17 10:36:15 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:36:16 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:36:21 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:36:21 2025] Using provided username: rishi
+[Thu Apr 17 10:36:21 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:36:21 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:36:26 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:36:26 2025] Using provided username: rishi
+[Thu Apr 17 10:36:26 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:36:26 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:36:31 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:36:31 2025] Using provided username: rishi
+[Thu Apr 17 10:36:31 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:36:31 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:36:36 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:36:36 2025] Using provided username: rishi
+[Thu Apr 17 10:36:36 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:36:36 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:36:41 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:36:41 2025] Using provided username: rishi
+[Thu Apr 17 10:36:41 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:36:41 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:36:46 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:36:46 2025] Using provided username: rishi
+[Thu Apr 17 10:36:46 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:36:46 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:36:51 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:36:51 2025] Using provided username: rishi
+[Thu Apr 17 10:36:51 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:36:51 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:36:56 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:36:56 2025] Using provided username: rishi
+[Thu Apr 17 10:36:56 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:36:56 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:37:01 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:37:01 2025] Using provided username: rishi
+[Thu Apr 17 10:37:01 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:37:02 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:37:07 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:37:07 2025] Using provided username: rishi
+[Thu Apr 17 10:37:07 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:37:07 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:37:12 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:37:12 2025] Using provided username: rishi
+[Thu Apr 17 10:37:12 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:37:12 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:37:17 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:37:17 2025] Using provided username: rishi
+[Thu Apr 17 10:37:17 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:37:17 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:37:22 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:37:22 2025] Using provided username: rishi
+[Thu Apr 17 10:37:22 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:37:22 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:37:27 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:37:27 2025] Using provided username: rishi
+[Thu Apr 17 10:37:27 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:37:27 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:37:32 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:37:32 2025] Using provided username: rishi
+[Thu Apr 17 10:37:32 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:37:32 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:37:37 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:37:37 2025] Using provided username: rishi
+[Thu Apr 17 10:37:37 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:37:37 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:37:42 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:37:42 2025] Using provided username: rishi
+[Thu Apr 17 10:37:42 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:37:42 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:37:48 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:37:48 2025] Using provided username: rishi
+[Thu Apr 17 10:37:48 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:37:48 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:37:53 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:37:53 2025] Using provided username: rishi
+[Thu Apr 17 10:37:53 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:37:53 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:37:58 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:37:58 2025] Using provided username: rishi
+[Thu Apr 17 10:37:58 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:37:58 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:38:03 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:38:03 2025] Using provided username: rishi
+[Thu Apr 17 10:38:03 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:38:03 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:38:08 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:38:08 2025] Using provided username: rishi
+[Thu Apr 17 10:38:08 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:38:08 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:38:13 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:38:13 2025] Using provided username: rishi
+[Thu Apr 17 10:38:13 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:38:13 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:38:18 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:38:18 2025] Using provided username: rishi
+[Thu Apr 17 10:38:18 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:38:18 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:38:23 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:38:23 2025] Using provided username: rishi
+[Thu Apr 17 10:38:23 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:38:23 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:38:28 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:38:28 2025] Using provided username: rishi
+[Thu Apr 17 10:38:28 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:38:29 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:38:34 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:38:34 2025] Using provided username: rishi
+[Thu Apr 17 10:38:34 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:38:34 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:38:39 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:38:39 2025] Using provided username: rishi
+[Thu Apr 17 10:38:39 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:38:39 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:38:44 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:38:44 2025] Using provided username: rishi
+[Thu Apr 17 10:38:44 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:38:44 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:38:49 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:38:49 2025] Using provided username: rishi
+[Thu Apr 17 10:38:49 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:38:49 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:38:54 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:38:54 2025] Using provided username: rishi
+[Thu Apr 17 10:38:54 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:38:54 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:38:59 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:38:59 2025] Using provided username: rishi
+[Thu Apr 17 10:38:59 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:38:59 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:39:04 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:39:04 2025] Using provided username: rishi
+[Thu Apr 17 10:39:04 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:39:05 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:39:10 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:39:10 2025] Using provided username: rishi
+[Thu Apr 17 10:39:10 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:39:10 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:39:15 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:39:15 2025] Using provided username: rishi
+[Thu Apr 17 10:39:15 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:39:15 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:39:20 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:39:20 2025] Using provided username: rishi
+[Thu Apr 17 10:39:20 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:39:20 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:39:25 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:39:25 2025] Using provided username: rishi
+[Thu Apr 17 10:39:25 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:39:25 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:39:30 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:39:30 2025] Using provided username: rishi
+[Thu Apr 17 10:39:30 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:39:30 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:39:35 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:39:35 2025] Using provided username: rishi
+[Thu Apr 17 10:39:35 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:39:35 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:39:40 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:39:40 2025] Using provided username: rishi
+[Thu Apr 17 10:39:40 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:39:40 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:39:45 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:39:45 2025] Using provided username: rishi
+[Thu Apr 17 10:39:45 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:39:46 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:39:51 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:39:51 2025] Using provided username: rishi
+[Thu Apr 17 10:39:51 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:39:51 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:39:56 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:39:56 2025] Using provided username: rishi
+[Thu Apr 17 10:39:56 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:39:56 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:40:01 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:40:01 2025] Using provided username: rishi
+[Thu Apr 17 10:40:01 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:40:01 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:40:06 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:40:06 2025] Using provided username: rishi
+[Thu Apr 17 10:40:06 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:40:06 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a6afb80>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:40:11 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:40:11 2025] Using provided username: rishi
+[Thu Apr 17 10:40:11 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:40:11 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a5098a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:40:16 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:40:16 2025] Using provided username: rishi
+[Thu Apr 17 10:40:16 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:40:16 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a508dc0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:40:21 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:40:21 2025] Using provided username: rishi
+[Thu Apr 17 10:40:21 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:40:21 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a508a90>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:40:26 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:40:26 2025] Using provided username: rishi
+[Thu Apr 17 10:40:26 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:40:27 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a508100>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:40:32 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:40:32 2025] Using provided username: rishi
+[Thu Apr 17 10:40:32 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:40:32 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a6afe20>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:40:37 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:40:37 2025] Using provided username: rishi
+[Thu Apr 17 10:40:37 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:40:37 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a508400>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:40:42 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:40:42 2025] Using provided username: rishi
+[Thu Apr 17 10:40:42 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:40:42 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a50a710>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:40:47 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:40:47 2025] Using provided username: rishi
+[Thu Apr 17 10:40:47 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:40:47 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a508f70>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:40:52 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:40:52 2025] Using provided username: rishi
+[Thu Apr 17 10:40:52 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:40:52 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a509e70>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:40:57 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:40:57 2025] Using provided username: rishi
+[Thu Apr 17 10:40:57 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:40:57 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a6afe50>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:41:02 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:41:02 2025] Using provided username: rishi
+[Thu Apr 17 10:41:02 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:41:02 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a50a9e0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:41:07 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:41:07 2025] Using provided username: rishi
+[Thu Apr 17 10:41:07 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:41:07 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a509780>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:41:12 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:41:12 2025] Using provided username: rishi
+[Thu Apr 17 10:41:12 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:41:12 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a50a6e0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:41:17 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:41:17 2025] Using provided username: rishi
+[Thu Apr 17 10:41:17 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:41:17 2025] Heartbeat failed with status code: 500
+[Thu Apr 17 10:41:22 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:41:22 2025] Using provided username: rishi
+[Thu Apr 17 10:41:22 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:41:22 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:41:27 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:41:27 2025] Using provided username: rishi
+[Thu Apr 17 10:41:27 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:41:28 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:41:33 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:41:33 2025] Using provided username: rishi
+[Thu Apr 17 10:41:33 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:41:33 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:41:38 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:41:38 2025] Using provided username: rishi
+[Thu Apr 17 10:41:38 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:41:38 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:41:43 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:41:43 2025] Using provided username: rishi
+[Thu Apr 17 10:41:43 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:41:43 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a508610>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:41:48 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:41:48 2025] Using provided username: rishi
+[Thu Apr 17 10:41:48 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:41:48 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a6ac340>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:41:53 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:41:53 2025] Using provided username: rishi
+[Thu Apr 17 10:41:53 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:41:54 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a6afa30>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:41:59 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:41:59 2025] Using provided username: rishi
+[Thu Apr 17 10:41:59 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:41:59 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a508e20>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:42:04 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:42:04 2025] Using provided username: rishi
+[Thu Apr 17 10:42:04 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:42:04 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:42:09 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:42:09 2025] Using provided username: rishi
+[Thu Apr 17 10:42:09 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:42:09 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:42:14 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:42:14 2025] Using provided username: rishi
+[Thu Apr 17 10:42:14 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:42:14 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:42:19 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:42:19 2025] Using provided username: rishi
+[Thu Apr 17 10:42:19 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:42:19 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:42:24 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:42:24 2025] Using provided username: rishi
+[Thu Apr 17 10:42:24 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:42:24 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:42:29 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:42:29 2025] Using provided username: rishi
+[Thu Apr 17 10:42:29 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:42:29 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:42:34 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:42:34 2025] Using provided username: rishi
+[Thu Apr 17 10:42:34 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:42:35 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:42:40 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:42:40 2025] Using provided username: rishi
+[Thu Apr 17 10:42:40 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:42:40 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:42:45 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:42:45 2025] Using provided username: rishi
+[Thu Apr 17 10:42:45 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:42:45 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:42:50 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:42:50 2025] Using provided username: rishi
+[Thu Apr 17 10:42:50 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:42:50 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:42:55 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:42:55 2025] Using provided username: rishi
+[Thu Apr 17 10:42:55 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:42:55 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:43:00 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:43:00 2025] Using provided username: rishi
+[Thu Apr 17 10:43:00 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:43:00 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:43:05 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:43:05 2025] Using provided username: rishi
+[Thu Apr 17 10:43:05 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:43:05 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:43:10 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:43:10 2025] Using provided username: rishi
+[Thu Apr 17 10:43:10 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:43:10 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:43:15 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:43:15 2025] Using provided username: rishi
+[Thu Apr 17 10:43:15 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:43:15 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:43:20 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:43:20 2025] Using provided username: rishi
+[Thu Apr 17 10:43:20 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:43:21 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:43:26 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:43:26 2025] Using provided username: rishi
+[Thu Apr 17 10:43:26 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:43:26 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:43:31 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:43:31 2025] Using provided username: rishi
+[Thu Apr 17 10:43:31 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:43:31 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:43:36 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:43:36 2025] Using provided username: rishi
+[Thu Apr 17 10:43:36 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:43:36 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:43:41 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:43:41 2025] Using provided username: rishi
+[Thu Apr 17 10:43:41 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:43:41 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:43:46 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:43:46 2025] Using provided username: rishi
+[Thu Apr 17 10:43:46 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:43:46 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:43:51 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:43:51 2025] Using provided username: rishi
+[Thu Apr 17 10:43:51 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:43:51 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:43:56 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:43:56 2025] Using provided username: rishi
+[Thu Apr 17 10:43:56 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:43:56 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a508fd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:44:01 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:44:01 2025] Using provided username: rishi
+[Thu Apr 17 10:44:01 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:44:02 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a509e10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:44:07 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:44:07 2025] Using provided username: rishi
+[Thu Apr 17 10:44:07 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:44:07 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a50ae90>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:44:12 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:44:12 2025] Using provided username: rishi
+[Thu Apr 17 10:44:12 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:44:12 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a6afe50>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:44:17 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:44:17 2025] Using provided username: rishi
+[Thu Apr 17 10:44:17 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:44:17 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a50a050>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:44:22 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:44:22 2025] Using provided username: rishi
+[Thu Apr 17 10:44:22 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:44:22 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a5080d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:44:27 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:44:27 2025] Using provided username: rishi
+[Thu Apr 17 10:44:27 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:44:27 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a50a770>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:44:32 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:44:32 2025] Using provided username: rishi
+[Thu Apr 17 10:44:32 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:44:32 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a508a00>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:44:37 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:44:37 2025] Using provided username: rishi
+[Thu Apr 17 10:44:37 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:44:37 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a67ba60>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:44:42 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:44:42 2025] Using provided username: rishi
+[Thu Apr 17 10:44:42 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:44:42 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:44:47 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:44:47 2025] Using provided username: rishi
+[Thu Apr 17 10:44:47 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:44:47 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:44:52 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:44:52 2025] Using provided username: rishi
+[Thu Apr 17 10:44:52 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:44:52 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:44:57 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:44:57 2025] Using provided username: rishi
+[Thu Apr 17 10:44:57 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:44:57 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:45:02 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:45:02 2025] Using provided username: rishi
+[Thu Apr 17 10:45:02 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:45:03 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:45:08 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:45:08 2025] Using provided username: rishi
+[Thu Apr 17 10:45:08 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:45:08 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:45:13 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:45:13 2025] Using provided username: rishi
+[Thu Apr 17 10:45:13 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:45:13 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:45:18 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:45:18 2025] Using provided username: rishi
+[Thu Apr 17 10:45:18 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:45:18 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:45:23 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:45:23 2025] Using provided username: rishi
+[Thu Apr 17 10:45:23 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:45:23 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:45:28 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:45:28 2025] Using provided username: rishi
+[Thu Apr 17 10:45:28 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:45:28 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:45:33 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:45:33 2025] Using provided username: rishi
+[Thu Apr 17 10:45:33 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:45:33 2025] Heartbeat sent successfully: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:45:38 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:45:38 2025] Using provided username: rishi
+[Thu Apr 17 10:45:38 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:45:38 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a6afa60>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:45:43 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:45:43 2025] Using provided username: rishi
+[Thu Apr 17 10:45:43 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:45:43 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a50a590>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:45:48 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:45:48 2025] Using provided username: rishi
+[Thu Apr 17 10:45:48 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:45:48 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a509210>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:45:53 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:45:53 2025] Using provided username: rishi
+[Thu Apr 17 10:45:53 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:45:54 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a509b70>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:45:59 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:45:59 2025] Using provided username: rishi
+[Thu Apr 17 10:45:59 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:45:59 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a508d90>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:46:04 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:46:04 2025] Using provided username: rishi
+[Thu Apr 17 10:46:04 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:46:04 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a6af220>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:46:09 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:46:09 2025] Using provided username: rishi
+[Thu Apr 17 10:46:09 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:46:09 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a508670>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:46:14 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:46:14 2025] Using provided username: rishi
+[Thu Apr 17 10:46:14 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:46:14 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a50a350>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:46:19 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:46:19 2025] Using provided username: rishi
+[Thu Apr 17 10:46:19 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:46:19 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a50a0e0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:46:24 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:46:24 2025] Using provided username: rishi
+[Thu Apr 17 10:46:24 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:46:24 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a50a470>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:46:29 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:46:29 2025] Using provided username: rishi
+[Thu Apr 17 10:46:29 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:46:29 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a50a710>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:46:34 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:46:34 2025] Using provided username: rishi
+[Thu Apr 17 10:46:34 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:46:34 2025] Heartbeat error: HTTPConnectionPool(host='192.168.43.151', port=9000): Max retries exceeded with url: /register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71555a6af340>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[Thu Apr 17 10:46:39 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:46:39 2025] Using provided username: rishi
+[Thu Apr 17 10:46:39 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:46:39 2025] Heartbeat failed with status code: 500
+[Thu Apr 17 10:46:44 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:46:44 2025] Using provided username: rishi
+[Thu Apr 17 10:46:44 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:46:44 2025] Heartbeat failed with status code: 500
+[Thu Apr 17 10:46:49 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:46:49 2025] Using provided username: rishi
+[Thu Apr 17 10:46:49 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:46:49 2025] Heartbeat failed with status code: 500
+[Thu Apr 17 10:46:54 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:46:54 2025] Using provided username: rishi
+[Thu Apr 17 10:46:54 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:46:54 2025] Heartbeat failed with status code: 500
+[Thu Apr 17 10:46:59 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:46:59 2025] Using provided username: rishi
+[Thu Apr 17 10:46:59 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:47:00 2025] Heartbeat failed with status code: 500
+[Thu Apr 17 10:47:05 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:47:05 2025] Using provided username: rishi
+[Thu Apr 17 10:47:05 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:47:05 2025] Heartbeat failed with status code: 500
+[Thu Apr 17 10:47:10 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:47:10 2025] Using provided username: rishi
+[Thu Apr 17 10:47:10 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:47:10 2025] Heartbeat failed with status code: 500
+[Thu Apr 17 10:47:15 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:47:15 2025] Using provided username: rishi
+[Thu Apr 17 10:47:15 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:47:15 2025] Heartbeat failed with status code: 500
+[Thu Apr 17 10:47:20 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:47:20 2025] Using provided username: rishi
+[Thu Apr 17 10:47:20 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:47:20 2025] Heartbeat failed with status code: 500
+[Thu Apr 17 10:47:25 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:47:25 2025] Using provided username: rishi
+[Thu Apr 17 10:47:25 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:47:25 2025] Heartbeat failed with status code: 500
+[Thu Apr 17 10:47:30 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:47:30 2025] Using provided username: rishi
+[Thu Apr 17 10:47:30 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:47:30 2025] Heartbeat failed with status code: 500
+[Thu Apr 17 10:47:35 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:47:35 2025] Using provided username: rishi
+[Thu Apr 17 10:47:35 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:47:35 2025] Heartbeat failed with status code: 500
+[Thu Apr 17 10:47:40 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:47:40 2025] Using provided username: rishi
+[Thu Apr 17 10:47:40 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:47:41 2025] Heartbeat failed with status code: 500
+[Thu Apr 17 10:47:46 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:47:46 2025] Using provided username: rishi
+[Thu Apr 17 10:47:46 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:47:46 2025] Heartbeat failed with status code: 500
+[Thu Apr 17 10:47:51 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:47:51 2025] Using provided username: rishi
+[Thu Apr 17 10:47:51 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:47:51 2025] Heartbeat failed with status code: 500
+[Thu Apr 17 10:47:56 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:47:56 2025] Using provided username: rishi
+[Thu Apr 17 10:47:56 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:47:56 2025] Heartbeat failed with status code: 500
+[Thu Apr 17 10:48:01 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:48:01 2025] Using provided username: rishi
+[Thu Apr 17 10:48:01 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:48:01 2025] Heartbeat failed with status code: 500
+[Thu Apr 17 10:48:06 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:48:06 2025] Using provided username: rishi
+[Thu Apr 17 10:48:06 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:48:06 2025] Heartbeat failed with status code: 500
+[Thu Apr 17 10:48:11 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:48:11 2025] Using provided username: rishi
+[Thu Apr 17 10:48:11 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:48:11 2025] Heartbeat failed with status code: 500
+[Thu Apr 17 10:48:16 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:48:16 2025] Using provided username: rishi
+[Thu Apr 17 10:48:16 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:48:16 2025] Heartbeat failed with status code: 500
+[Thu Apr 17 10:48:21 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:48:21 2025] Using provided username: rishi
+[Thu Apr 17 10:48:21 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:48:21 2025] Heartbeat failed with status code: 500
+[Thu Apr 17 10:48:26 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:48:26 2025] Using provided username: rishi
+[Thu Apr 17 10:48:26 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:48:26 2025] Heartbeat failed with status code: 500
+[Thu Apr 17 10:48:31 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:48:31 2025] Using provided username: rishi
+[Thu Apr 17 10:48:31 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+[Thu Apr 17 10:48:31 2025] Heartbeat failed with status code: 500
+[Thu Apr 17 10:48:36 2025] Using provided IP: 192.168.43.113
+[Thu Apr 17 10:48:36 2025] Using provided username: rishi
+[Thu Apr 17 10:48:36 2025] Sending heartbeat with data: {'ip': '192.168.43.113', 'username': 'rishi'}
+client_loop: send disconnect: Broken pipe

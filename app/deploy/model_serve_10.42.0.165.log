@@ -1,0 +1,77 @@
+Parameters:
+MODEL_NFS: /mnt/nfs/models/mnist_model.zip
+LOCAL_MODEL_DIR: /mnt/nfs/models/extracted_model_files
+MODEL_SUBDIR: mnist_model
+Virtual environment activated. Using python: /home/rishi/model_venv/bin/python
+Found model.zip in NFS share at /mnt/nfs/models/mnist_model.zip. Extracting to /mnt/nfs/models/extracted_model_files...
+Archive:  /mnt/nfs/models/mnist_model.zip
+  inflating: /mnt/nfs/models/extracted_model_files/mnist_model/README.md  
+  inflating: /mnt/nfs/models/extracted_model_files/mnist_model/frontend.html  
+  inflating: /mnt/nfs/models/extracted_model_files/mnist_model/model_state.pt  
+  inflating: /mnt/nfs/models/extracted_model_files/mnist_model/server.py  
+  inflating: /mnt/nfs/models/extracted_model_files/mnist_model/requirements.txt  
+Model extracted successfully.
+Changing to model server directory: /mnt/nfs/models/extracted_model_files/mnist_model
+Looking in links: /tmp/tmp4w4qpui0
+Requirement already satisfied: setuptools in /home/rishi/model_venv/lib/python3.10/site-packages (59.6.0)
+Requirement already satisfied: pip in /home/rishi/model_venv/lib/python3.10/site-packages (25.0.1)
+Requirement already satisfied: pip in /home/rishi/model_venv/lib/python3.10/site-packages (25.0.1)
+Installing CPU-only version of PyTorch, torchvision, and torchaudio...
+Looking in indexes: https://download.pytorch.org/whl/cpu
+Requirement already satisfied: torch in /home/rishi/model_venv/lib/python3.10/site-packages (2.6.0+cpu)
+Requirement already satisfied: torchvision in /home/rishi/model_venv/lib/python3.10/site-packages (0.21.0+cpu)
+Requirement already satisfied: torchaudio in /home/rishi/model_venv/lib/python3.10/site-packages (2.6.0+cpu)
+Requirement already satisfied: filelock in /home/rishi/model_venv/lib/python3.10/site-packages (from torch) (3.13.1)
+Requirement already satisfied: typing-extensions>=4.10.0 in /home/rishi/model_venv/lib/python3.10/site-packages (from torch) (4.12.2)
+Requirement already satisfied: networkx in /home/rishi/model_venv/lib/python3.10/site-packages (from torch) (3.3)
+Requirement already satisfied: jinja2 in /home/rishi/model_venv/lib/python3.10/site-packages (from torch) (3.1.4)
+Requirement already satisfied: fsspec in /home/rishi/model_venv/lib/python3.10/site-packages (from torch) (2024.6.1)
+Requirement already satisfied: sympy==1.13.1 in /home/rishi/model_venv/lib/python3.10/site-packages (from torch) (1.13.1)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /home/rishi/model_venv/lib/python3.10/site-packages (from sympy==1.13.1->torch) (1.3.0)
+Requirement already satisfied: numpy in /home/rishi/model_venv/lib/python3.10/site-packages (from torchvision) (2.1.2)
+Requirement already satisfied: pillow!=8.3.*,>=5.3.0 in /home/rishi/model_venv/lib/python3.10/site-packages (from torchvision) (11.0.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/rishi/model_venv/lib/python3.10/site-packages (from jinja2->torch) (2.1.5)
+used default requirements.txt
+Requirement already satisfied: fastapi in /home/rishi/model_venv/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (0.115.12)
+Requirement already satisfied: pillow in /home/rishi/model_venv/lib/python3.10/site-packages (from -r requirements.txt (line 3)) (11.0.0)
+Requirement already satisfied: torch in /home/rishi/model_venv/lib/python3.10/site-packages (from -r requirements.txt (line 4)) (2.6.0+cpu)
+Requirement already satisfied: torchvision in /home/rishi/model_venv/lib/python3.10/site-packages (from -r requirements.txt (line 5)) (0.21.0+cpu)
+Requirement already satisfied: python-multipart in /home/rishi/model_venv/lib/python3.10/site-packages (from -r requirements.txt (line 6)) (0.0.20)
+Requirement already satisfied: uvicorn[standard] in /home/rishi/model_venv/lib/python3.10/site-packages (from -r requirements.txt (line 2)) (0.34.0)
+Requirement already satisfied: starlette<0.47.0,>=0.40.0 in /home/rishi/model_venv/lib/python3.10/site-packages (from fastapi->-r requirements.txt (line 1)) (0.46.1)
+Requirement already satisfied: pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 in /home/rishi/model_venv/lib/python3.10/site-packages (from fastapi->-r requirements.txt (line 1)) (2.11.1)
+Requirement already satisfied: typing-extensions>=4.8.0 in /home/rishi/model_venv/lib/python3.10/site-packages (from fastapi->-r requirements.txt (line 1)) (4.12.2)
+Requirement already satisfied: click>=7.0 in /home/rishi/model_venv/lib/python3.10/site-packages (from uvicorn[standard]->-r requirements.txt (line 2)) (8.1.8)
+Requirement already satisfied: h11>=0.8 in /home/rishi/model_venv/lib/python3.10/site-packages (from uvicorn[standard]->-r requirements.txt (line 2)) (0.14.0)
+Requirement already satisfied: httptools>=0.6.3 in /home/rishi/model_venv/lib/python3.10/site-packages (from uvicorn[standard]->-r requirements.txt (line 2)) (0.6.4)
+Requirement already satisfied: python-dotenv>=0.13 in /home/rishi/model_venv/lib/python3.10/site-packages (from uvicorn[standard]->-r requirements.txt (line 2)) (1.1.0)
+Requirement already satisfied: pyyaml>=5.1 in /home/rishi/model_venv/lib/python3.10/site-packages (from uvicorn[standard]->-r requirements.txt (line 2)) (6.0.2)
+Requirement already satisfied: uvloop!=0.15.0,!=0.15.1,>=0.14.0 in /home/rishi/model_venv/lib/python3.10/site-packages (from uvicorn[standard]->-r requirements.txt (line 2)) (0.21.0)
+Requirement already satisfied: watchfiles>=0.13 in /home/rishi/model_venv/lib/python3.10/site-packages (from uvicorn[standard]->-r requirements.txt (line 2)) (1.0.4)
+Requirement already satisfied: websockets>=10.4 in /home/rishi/model_venv/lib/python3.10/site-packages (from uvicorn[standard]->-r requirements.txt (line 2)) (15.0.1)
+Requirement already satisfied: filelock in /home/rishi/model_venv/lib/python3.10/site-packages (from torch->-r requirements.txt (line 4)) (3.13.1)
+Requirement already satisfied: networkx in /home/rishi/model_venv/lib/python3.10/site-packages (from torch->-r requirements.txt (line 4)) (3.3)
+Requirement already satisfied: jinja2 in /home/rishi/model_venv/lib/python3.10/site-packages (from torch->-r requirements.txt (line 4)) (3.1.4)
+Requirement already satisfied: fsspec in /home/rishi/model_venv/lib/python3.10/site-packages (from torch->-r requirements.txt (line 4)) (2024.6.1)
+Requirement already satisfied: sympy==1.13.1 in /home/rishi/model_venv/lib/python3.10/site-packages (from torch->-r requirements.txt (line 4)) (1.13.1)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /home/rishi/model_venv/lib/python3.10/site-packages (from sympy==1.13.1->torch->-r requirements.txt (line 4)) (1.3.0)
+Requirement already satisfied: numpy in /home/rishi/model_venv/lib/python3.10/site-packages (from torchvision->-r requirements.txt (line 5)) (2.1.2)
+Requirement already satisfied: annotated-types>=0.6.0 in /home/rishi/model_venv/lib/python3.10/site-packages (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi->-r requirements.txt (line 1)) (0.7.0)
+Requirement already satisfied: pydantic-core==2.33.0 in /home/rishi/model_venv/lib/python3.10/site-packages (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi->-r requirements.txt (line 1)) (2.33.0)
+Requirement already satisfied: typing-inspection>=0.4.0 in /home/rishi/model_venv/lib/python3.10/site-packages (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi->-r requirements.txt (line 1)) (0.4.0)
+Requirement already satisfied: anyio<5,>=3.6.2 in /home/rishi/model_venv/lib/python3.10/site-packages (from starlette<0.47.0,>=0.40.0->fastapi->-r requirements.txt (line 1)) (4.9.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/rishi/model_venv/lib/python3.10/site-packages (from jinja2->torch->-r requirements.txt (line 4)) (2.1.5)
+Requirement already satisfied: exceptiongroup>=1.0.2 in /home/rishi/model_venv/lib/python3.10/site-packages (from anyio<5,>=3.6.2->starlette<0.47.0,>=0.40.0->fastapi->-r requirements.txt (line 1)) (1.2.2)
+Requirement already satisfied: idna>=2.8 in /home/rishi/model_venv/lib/python3.10/site-packages (from anyio<5,>=3.6.2->starlette<0.47.0,>=0.40.0->fastapi->-r requirements.txt (line 1)) (3.10)
+Requirement already satisfied: sniffio>=1.1 in /home/rishi/model_venv/lib/python3.10/site-packages (from anyio<5,>=3.6.2->starlette<0.47.0,>=0.40.0->fastapi->-r requirements.txt (line 1)) (1.3.1)
+Starting FastAPI server on port 8000...
+INFO:     Started server process [11201]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     10.42.0.1:48240 - "POST /infer HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11201]
+Terminated
